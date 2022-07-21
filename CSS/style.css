@@ -231,6 +231,8 @@ footer hr {
     font-weight: 400;
 }
 
+/* 3rd pad group section */
+
 .groups {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -261,11 +263,13 @@ footer hr {
     }
 
     .header-text {
-        padding-left: 60px;
+        margin-top: 60px;
+        padding-top: 20px;
+        padding-left: 15px;
     }
 
     .header-img img {
-        height: 340px;
+        height: 420px;
     }
 
     .blog {
@@ -279,6 +283,7 @@ footer hr {
         height: 64px;
         background-color: white;
         padding-left: 10px;
+        box-shadow: none;
     }
 
     .blog-menu a {
@@ -357,4 +362,47 @@ footer hr {
         text-align: justify;
     }
 
+}
+
+/* ------------------
+    matches page
+-------------------- */
+/* --------tablet-------- */
+@media only screen and (max-width: 768px) {
+    .match-list {
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 20px;
+    }
+}
+
+/* -----phone--------------- */
+
+@media only screen and (max-width: 576px) {
+    .match-list {
+        grid-template-columns: 1fr;
+        padding-top: 20px;
+    }
+}
+
+/* ---------------
+    groups page
+---------------- */
+/* -------tablet---------- */
+
+@media only screen and (max-width: 768px) {
+    .groups {
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 20px;
+        padding-left: 50px;
+    }
+}
+
+/* -------phone--------- */
+
+@media only screen and (max-width: 576px) {
+    .groups {
+        grid-template-columns: 1fr;
+        padding-top: 20px;
+        padding-left: 30px;
+    }
 }
