@@ -140,9 +140,9 @@ body {
 .view-all-btn a {
     text-decoration: none;
     color: white;
-    background-color: #DD0000;
+    background-color: red;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 12px 30px;
     border-radius: 10px;
 }
@@ -297,8 +297,13 @@ footer hr {
         padding-top: 10px;
     }
 
+    .blog-hidden {
+        display: none;
+    }
+
     .view-all-btn {
         display: block;
+        align-items: center;
     }
 }
 
